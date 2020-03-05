@@ -32,7 +32,10 @@ class TaskDetailTableViewController: UITableViewController {
     //MARK: - Actions
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        guard let name = taskNameTextField.text, let notes = notesTextView.text, let date = dueDateValue else {return}
+        guard let name = taskNameTextField.text else {return}
+        let notes = notesTextView.text
+        let date = dueDatePicker.date
+        
         if let task = task {
             TaskController.sharedInstance.update(task: task, name: name, notes: notes, due: date)
         } else {

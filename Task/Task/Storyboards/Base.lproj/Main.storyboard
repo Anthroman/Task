@@ -102,13 +102,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter task name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-Dy-yOt">
-                                                    <rect key="frame" x="20" y="21" width="374" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter task name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-Dy-yOt">
+                                                    <rect key="frame" x="30" y="21" width="374" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2xZ-Dy-yOt" firstAttribute="top" secondItem="M0J-AG-qY3" secondAttribute="topMargin" constant="10" id="cqV-mn-S78"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2xZ-Dy-yOt" secondAttribute="bottom" constant="10" id="ewt-P2-DCk"/>
+                                                <constraint firstItem="2xZ-Dy-yOt" firstAttribute="leading" secondItem="M0J-AG-qY3" secondAttribute="leadingMargin" constant="10" id="giP-nU-Hy8"/>
+                                                <constraint firstItem="2xZ-Dy-yOt" firstAttribute="trailing" secondItem="M0J-AG-qY3" secondAttribute="trailingMargin" constant="10" id="mQk-vN-r2r"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -122,13 +127,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter due date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shX-Dz-PIJ">
-                                                    <rect key="frame" x="20" y="17" width="374" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter due date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shX-Dz-PIJ">
+                                                    <rect key="frame" x="30" y="21" width="374" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="shX-Dz-PIJ" firstAttribute="trailing" secondItem="kbW-Ux-oDD" secondAttribute="trailingMargin" constant="10" id="HXu-qP-t0P"/>
+                                                <constraint firstItem="shX-Dz-PIJ" firstAttribute="leading" secondItem="kbW-Ux-oDD" secondAttribute="leadingMargin" constant="10" id="V9w-Ly-PF0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="shX-Dz-PIJ" secondAttribute="bottom" constant="10" id="Z3Q-C5-BPL"/>
+                                                <constraint firstItem="shX-Dz-PIJ" firstAttribute="top" secondItem="kbW-Ux-oDD" secondAttribute="topMargin" constant="10" id="bZ5-dO-Ggc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
