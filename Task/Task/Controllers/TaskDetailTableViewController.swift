@@ -32,7 +32,7 @@ class TaskDetailTableViewController: UITableViewController {
     //MARK: - Actions
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        guard let name = taskNameTextField.text else {return}
+        guard let name = taskNameTextField.text, !name.isEmpty else {return}
         let notes = notesTextView.text
         let date = dueDatePicker.date
         
